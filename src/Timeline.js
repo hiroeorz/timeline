@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { mapStateToProps } from './action.js';
 
@@ -12,6 +13,10 @@ class Timeline extends Component {
 
     return <ul>{tweets}</ul>
   }
+}
+
+Timeline.propTypes = {
+  timeline: PropTypes.arrayOf(PropTypes.string).isRequired
 }
 
 export default connect(mapStateToProps)(Timeline);
