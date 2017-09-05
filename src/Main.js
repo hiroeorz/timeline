@@ -6,14 +6,6 @@ import About from './About.js';
 import Hello from './Hello.js';
 
 class Main extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: "",
-      timeline: []
-    };
-  }
-
   render() {
     return (
       <Switch>
