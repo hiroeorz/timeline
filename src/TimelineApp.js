@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './App.css';
-import Timeline from './Timeline.js'
+import Timeline from './Timeline.js';
 import { mapStateToProps, mapDispatchToProps } from './action.js';
 
 class TimelineApp extends Component {

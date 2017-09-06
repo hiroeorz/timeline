@@ -13,6 +13,7 @@ class Header extends Component {
         <a href="/about/1">1について/1</a>:
         <a href="/about/2">2について/2</a>:
         <a href="/">タイムライン</a>:
+        <a href="/human">人間検索</a>:
       </div>
     );
   }

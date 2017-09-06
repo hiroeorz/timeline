@@ -1,6 +1,7 @@
 const initialState = {
   timeline: [],
-  text: ""
+  text: "",
+  human: {name: "", age: 0, nickname: ""}
 }
 
 export default function reducer(state = initialState, action) {
@@ -8,6 +9,7 @@ export default function reducer(state = initialState, action) {
 
     /* ツイートを投稿する */
     case 'POST_TWEET':
+      console.log(state);
       return {
         ...state,
         text: "",
@@ -20,6 +22,17 @@ export default function reducer(state = initialState, action) {
         ...state,
         text: action.text
       };
+
+    case 'HUMAN':
+      console.log(action);
+      return {
+        ...state,
+        human: action.human
+      };
+
+    case 'HUMAN_ERROR':
+      console.log(action);
+      return state;
 
     default:
       return state
